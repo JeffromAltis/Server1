@@ -1,0 +1,46 @@
+groups:
+  Member:
+    permissions:
+    - bukkit.command.version
+    - bukkit.command.plugins
+    - bukkit.command.help
+    - minecraft.command.help
+    - minecraft.command.me
+    - minecraft.command.tell
+    - bukkit.broadcast.user
+    - bukkit.broadcast
+    options:
+      rank: '200'
+      default: true
+      prefix: '(Member) '
+  Admin:
+    permissions:
+    - '*'
+    options:
+      prefix: '&0(&4Admin&0)&7 '
+      rank: '1'
+  Moderator:
+    permissions:
+    - '*'
+    options:
+      prefix: '&khiii&1Moderator&khiii&8 '
+      rank: '100'
+schema-version: 1
+users:
+  cc7b6997-b198-4051-887a-132460383885:
+    group:
+    - Admin
+    worlds:
+      bukkit.*:
+        group:
+        - Admin
+      mincraft.*:
+        group:
+        - Admin
+    options:
+      name: jimmyluvspie21
+  63c5f12e-1196-4374-b9ba-c05cb4a49ee7:
+    group:
+    - Member
+    options:
+      name: WarHammerCasey
